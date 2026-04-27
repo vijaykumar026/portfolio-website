@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#1f242d;
+    color:#fff;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+}
+
+nav a{
+    margin:0 10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:cyan;
+}
+
+/* HOME */
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 10%;
+    flex-wrap:wrap;
+}
+
+.home-text h1{
+    font-size:40px;
+}
+
+.home-text span{
+    color:cyan;
+}
+
+.socials a{
+    margin:10px;
+    font-size:20px;
+}
+
+.home-img img{
+    width:250px;
+    border-radius:50%;
+    box-shadow:0 0 30px cyan;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:15px;
+    padding:10px 20px;
+    background:cyan;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    box-shadow:0 0 15px cyan;
+}
+
+/* ABOUT */
+.about{
+    display:flex;
+    padding:50px 10%;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:250px;
+    border-radius:20px;
+    box-shadow:0 0 25px cyan;
+}
+
+.about-text{
+    margin-left:40px;
+}
+
+/* SERVICES */
+.services{
+    text-align:center;
+    padding:50px 10%;
+}
+
+.service-box{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#323946;
+    padding:20px;
+    border-radius:10px;
+    width:220px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px cyan;
+}
+
+/* PROJECTS */
+.projects{
+    text-align:center;
+    padding:50px 10%;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.project-grid img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    padding:50px 10%;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.contact input,
+.contact textarea{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Portfolio.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">mySkills</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-text">
+        <h3>Hello, It's Me</h3>
+        <h1>Vijaykumar Sahu</h1>
+        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <p>“I build clean and user-friendly web applications.”.</p>
+
+        <div class="socials">
+            <a href="https://github.com/vijaykumar026/VKS">🐙</a>
+            <a href="https://www.linkedin.com/in/vijaykumar-sahu-18966a2a9/">💼</a>
+            <a href="https://leetcode.com/u/yD9n6CrnHE/">🧑‍💻</a>
+            <a href="mailto:vijaykumarsahu541@gmail.com">📨</a>
+        </div>
+
+        <a href="VIJAY RESUME.pdf">
+        <button class="btn">Download Resume</button>
+        </a>
+    </div>
+
+    <div class="home-img">
+        <img src="photo1.png" alt="">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div>
+        <img src="https://via.placeholder.com/300" alt="">
+    </div>
+
+    <div class="about-text">
+        <h2>About <span style="color:cyan;">Me</span></h2>
+        <h4>Frontend Developer!</h4>
+        <p>
+I am a B.Tech student with a strong interest in web development and problem solving. 
+I enjoy building clean, user-friendly applications and continuously improving my coding skills. 
+I have experience in HTML, CSS, JavaScript, and basic knowledge of Java and Python. 
+I am a consistent learner who focuses on growth and practical implementation.
+</p>
+        <button class="btn">Read More</button>
+    </div>
+</section>
+
+<!-- SERVICES -->
+
+ <h2><center>My <span style="color:cyan;">Skills</span></center></h2>
+
+<<section class="services" id="services">
+   
+
+    <div class="service-box">
+        <div class="card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, Responsive Design</p>
+        </div>
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Java, C, Python (Basics)</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Git, VS Code, Chrome DevTools</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2>Latest <span style="color:cyan;">Project</span></h2>
+
+    <div class="project-grid">
+        <img src="tictoc1 .png" alt="Tic Tac Toe">
+        <img src="outpass1.png" alt="Outpass Management System">
+        <img src="rockpaper1.png" alt="Rock Paper Scissors">
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact <span style="color:cyan;">Me!</span></h2>
+
+    <form>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+
+<script>
+// Smooth scroll
+document.querySelectorAll('nav a').forEach(link=>{
+    link.addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+        .scrollIntoView({behavior:'smooth'});
+    });
+});
+</script>
+
+</body>
+</html>
